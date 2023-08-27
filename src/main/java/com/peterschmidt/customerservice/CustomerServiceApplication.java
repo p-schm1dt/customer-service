@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/customer")
 
 public class CustomerServiceApplication {
-// test
+
 	@RequestMapping("/{customerId}")
 	public Customer getCustomer(@PathVariable("customerId") int id){
 		return new Customer(id,"Max", "Mustermann", "max@mustermann.com");
